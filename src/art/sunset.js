@@ -10,7 +10,7 @@ function shade(x, y, t) {
     
     //Make a sky color
     let s = hsl(y / 2 - .4, 1, .3);
-    if (y > .65) {
+    if (y > .66) {
         s = hsl((.6 - y) / 2 - .2, 1, .3);
         if (Math.pow(1 - Math.abs(.39 - x) + (y - .2) * .1, 5) > .9) {
             s = hsl(.15, 1, .7);
